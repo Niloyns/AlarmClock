@@ -1,0 +1,148 @@
+/*  GLobal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .btn {
+    outline: none;
+    border: none;
+    background-color: #6F8FAF;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+  }
+  select {
+    appearance: none;
+    outline: black;
+    background-color: #6F8FAF;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    color: #0e141b;
+    border-color: black;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .mb {
+    margin-bottom: 1rem;
+  }
+   
+  /* End GLobal Styles */
+  
+  .main-container {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #79afb1 0%, #088F8F 100%);
+  }
+  
+  .clock-container {
+    padding: 2rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s ease-in-out;
+    background-color:#008080;
+  }
+  
+  .current-time {
+    font-size: 2rem;
+    background: linear-gradient(45deg, #96DED1, 	#8A9A5B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .alarm-form {
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .submit-button {
+    border-color: black;
+    border: 10px;
+    border-radius: 2rem;
+    font-weight: bold;
+  }
+  
+  .set-alarm-container {
+    width: 100%;
+  }
+  
+  .set-alarm-container .set-alarm-container-title {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .alarm {
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    align-items: center;
+  }
+  .alarm .delete-alarm {
+    border-radius: 2rem;
+    background-color: 	#2AAA8A;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: xx-medium;
+  }
+  
+  .time {
+    color: #0e141b;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .btn:focus,
+  .btn:hover {
+    box-shadow: rgb(47, 225, 237) 2px 2px 2px 1px inset, #0c1caa -2px -2px 10px 1px inset;
+  }
+
+  select:focus,
+  select:hover {
+    box-shadow: 	#1434A4 2px 2px 2px 1px inset, 	#00FFFF -2px -2px 10px 1px inset;
+  }
+
+  .clock-container:focus,
+  .clock-container:hover {
+    box-shadow: 	#1434A4 2px 2px 2px 1px inset, 	#00FFFF -2px -2px 10px 1px inset;
+  }
+  
+  .page-title {
+    background-color: #40B5AD;
+    align-items: center;
+    text-align: center;
+    color: black;
+  }
+  
+  /* style of devices of screen size less than 768px */
+  @media only screen and (min-width: 600px) {
+    /* adding padding to container */
+    .main-container {
+      padding-block: 2rem;
+    }
+    .clock-container {
+      justify-content: center;
+      border-radius: 50px;
+      width: 450px;
+      min-height: auto;
+    }
+  }
