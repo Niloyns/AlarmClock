@@ -1,6 +1,5 @@
 # AlarmClock
 Alarm-clock-project
-# Beginner's Alarm Clock
 
 A simple alarm clock project created using HTML, CSS, and JavaScript. This project is a great way to learn the fundamentals of web development while building a useful application.
 
